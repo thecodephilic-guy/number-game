@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="icons8-game-controller-50.png" type="image/x-icon">
+</head>
+<body class= "bg-gray-200 flex items-center justify-center h-screen">
+    <div class="bg-white p-8 rounded shadow-md">
+        <h1 class="text-3xl font-bold mb-4">Number Guessing Game</h1>
+        <p>Guess a number between 1 and 100</p>
+        <p class="mb-2">You have 10 attempts to guess the right number:</p>
+        <form>
+            <input type="text" id="guessFiled" class="border rounded px-3 py-2 mb-4">
+            <input type="submit" id="submit" value="Check" class="bg-blue-500 text-white px-4 py-2 rounded hover:to-blue-950">
+        </form>
+        
+        <div class="resultParas">
+            <p>Previous Guesses: <span class="guesses px-2 bg-gray-200"></span></p>
+            <p>Remaining Guesses: <span class="remainingGuesses">6</span></p>
+            <div class="lowOrHi text-xl mb-2"></div>
+        </div>
+    </div>  
+    <script src="script.js"></script>
+</body>
+</html>
